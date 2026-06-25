@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина — Букет чувств</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <img src="img/logo.png" alt="Логотип" class="logo">
+      <nav class="main-nav">
+        <a href="about.html">О нас</a>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+      </nav>
+      <a class="login" href="login.html">Вход</a>
+    </div>
+  </header>
+
+  <main class="cart-wrap">
+    <div class="wrap cart-grid">
+      <div>
+        <h2 style="font-family:'Playfair Display',serif;color:var(--muted)">Заказ</h2>
+
+        <div class="cart-item" data-price="2000">
+          <img src="img/tovar1.png" alt="Майский букет">
+          <div>
+            <h3 style="margin:0 0 8px;font-family:'Playfair Display',serif">Майский букет</h3>
+            <div class="price">2000 рублей</div>
+            <div class="qty">
+              <button class="dec">−</button>
+              <div class="value">1</div>
+              <button class="inc">+</button>
+            </div>
+            <div class="cart-total" id="cart-total">Итог: 2000 рублей</div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="cart-summary">
+        <h3 style="margin-top:0">Данные для доставки</h3>
+        <form class="cart-form">
+          <input class="cart-input" placeholder="Комментарий">
+          <input class="cart-input" placeholder="Введите адрес">
+          <input class="cart-input" placeholder="Введите телефон">
+          <button class="place-order" type="button">Заказать</button>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Букет чувств</div>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
